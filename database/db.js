@@ -3,7 +3,7 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 // Caminho do banco de dados na pasta persistente
-const dbPath = "/data/database.db"; // Render mantém os arquivos na pasta /data
+const dbPath = "../database/db.js"; // Render mantém os arquivos na pasta /data
 
 const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
